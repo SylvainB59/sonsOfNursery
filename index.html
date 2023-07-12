@@ -88,22 +88,24 @@
             <video src="video saut moto.mp4" autoplay height="250" loop muted></video>
             <h4>tableau des équipes</h4>
             <hr>
-            <table border="2" width="75%">              
+            <table border="2" width="100%">              
               <caption>
-                correspondance des équipes
-              </caption>
-        
-              <thead>
+               <h2>correspondance des équipes</h2>                
+              </caption>             
                 <tr>
                   <th>Pays</th>
+                  <th>Nom de la Team</th>
+                  <th>Marque</th>                
                   <th>Couleur</th>
                   <th>Nombre participant</th>
                   <th>Nombre participant restant</th>
                   <th>Taille des roues</th>
-                  <th>Forme</th>                                 
-              </thead>              
+                  <th>Forme</th>
+                </tr>          
                 <tr>
                   <td>France</td>
+                  <td>Les Gourous</td>
+                  <td>Suzuki</td>                  
                   <td>Bleu</td>
                   <td>20</td>
                   <td>7</td>
@@ -112,6 +114,8 @@
                 </tr>
                 <tr>
                   <td>Algerie</td>
+                  <td>vroum 2.0</td>
+                  <td>Kawazaki</td>
                   <td>Orange</td>
                   <td>20</td>
                   <td>12</td>
@@ -120,6 +124,8 @@
                 </tr>
                 <tr>
                   <td>USA</td>
+                  <td>Mistral</td>
+                  <td>Gas gas</td>
                   <td>Rose</td>
                   <td>20</td>
                   <td>15</td>
@@ -128,6 +134,8 @@
                 </tr>
                 <tr>
                   <td>belgique</td>
+                  <td>Sunkids</td>
+                  <td>Yamaha</td>
                   <td>Jaune</td>
                   <td>20</td>
                   <td>20</td>
@@ -136,6 +144,8 @@
                 </tr>
                 <tr>
                   <td>Maroc</td>
+                  <td>Youpi</td>
+                  <td>Honda</td>
                   <td>Rouge</td>
                   <td>20</td>
                   <td>18</td>
@@ -144,6 +154,8 @@
                 </tr>
                 <tr>
                   <td>Espagne</td>
+                  <td>Tacos</td>
+                  <td>KTM</td>
                   <td>Vert</td>
                   <td>20</td>
                   <td>0</td>
@@ -152,6 +164,8 @@
                 </tr>
                 <tr>
                   <td>Chine</td>
+                  <td>Nems</td>
+                  <td>Yamasaki</td>
                   <td>Blanc</td>
                   <td>20</td>
                   <td>7</td>
@@ -159,7 +173,64 @@
                   <td>La Patate</td>
                 </tr>
               
-            </table>
+            </table><br>
+            <hr>
+            
+            <form action="#" method="get">
+
+              <h2>Formulaire de participation </h2>
+              <h3>* champs obligatoires</h3>
+
+              <label>nom*:<br>
+                  <input type="text" name="nom_de_famille" placeholder="nom de famille">
+              </label><br>  
+              <label>prénom*:<br>
+                  <input type="text" name="prénom" placeholder="prénom">
+              </label><br>  
+              <label>Numéro de téléphone<br>
+                  <input type="tel" name="tel" placeholder="0600000000" />
+              </label><br>  
+              <label>Adresse e-mail<br>
+                  <input type="email" name="email" placeholder="adresse e-mail" />
+              </label><br>  
+              <label>Choix d'un pays*:</label><br>
+              <select name="choix d'un pays" id="choix d'un Pays">
+                  <option value="#" disabled="choix">choisir</option>
+                  <option value="Fr">France</option>
+                  <option value="alger">Algérie</option>
+                  <option value="USA">USA</option>
+                  <option value="Belge">Belgique</option>
+                  <option value="Nantes">Nantes</option>
+                  <option value="Maroc">Maroc</option>
+                  <option value="ESP">Espagne</option>
+                  <option value="Chine">Chine</option>
+                  <option value="Toulouse">Toulouse</option>
+              </select>
+              <br>             
+  
+              <label>Nombre de participants*<br>
+                  <input type="number" name="nbr" min="1" max="20">
+              </label><br><br> 
+              <label>
+                  <textarea name="commentaires" id="commentaires" cols="25" rows="3"
+                      placeholder="Ajouter un commentaire."></textarea>
+              </label><br><br>
+  
+              <label>Validation du Formulaire*</label><br>
+              <label>
+                  <input type="radio" name="CGV" value="oui">J'accepte
+              </label>
+              <label>
+                  <input type="radio" name="CGV" value="non">Je refuse
+              </label><br><br>
+  
+              <label>
+                  <button type="submit">Envoyer ma demande</button>
+              </label>
+  
+  
+          </form><br>
+          <hr>
        
 
 </body>
